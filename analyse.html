@@ -11,20 +11,12 @@
     <title>Green Home</title>
 	
 	<style>
-	#rahmen {
-		width: 70%;
-		margin: 0 auto;
-		padding: 20px 0 20px 0;
+	.im-centered {
+		margin: 0 auto; 
+		max-width: 1000px;
+		text-align: center;
 	}
-	
-	.bubble {
-		background: url('img/faq/bubble.png');
-		width: 300px;
-		height: 155px;
-		padding: 25px 25px 30px 30px;
-		margin: 10px;
-		float:left;
-	}
+
 	</style>
 
     <!-- Bootstrap core CSS -->
@@ -65,7 +57,7 @@
           <ul class="nav navbar-nav">
             <li><span class="glyphicon glyphicon-th"></span><a href="index.html">Überblick</a></li>
 			<li><span class="glyphicon glyphicon-piggy-bank"></span><a href="vorschlaege.html">Vorschläge</a></li>
-            <li class="active"><span class="glyphicon glyphicon-list"></span><a href="#">FAQ</a></li>
+            <li><span class="glyphicon glyphicon-list"></span><a href="faq.html">FAQ</a></li>
             <li><span class="glyphicon glyphicon-cog"></span><a href="#">Profil</a></li>
           </ul>
 		<div class="profile btn-grp">
@@ -87,8 +79,8 @@
 			  <h2 class="sub-header">Meine Geräte</h2> 
 				<li><a href="index.html">Überblick</a></li>
 				<li><a href="vorschlaege.html">Vorschläge</a></li>
-				<li><a href="analyse.html">Analyse</a></li>
-				<li class="active"><a href="#">FAQ<span class="sr-only">(current)</span></a></li>
+				<li class="active"><a href="#">Analyse<span class="sr-only">(current)</span></a></li>
+				<li><a href="faq.html">FAQ</a></li>
 			  </ul>
 			  <ul class="nav nav-sidebar">
 				<li><a href="">Wohnzimmer</a></li>
@@ -97,30 +89,42 @@
 				<li><a href="">Büro</a></li>
 			  </ul>
 			</div>
-			<form>
-			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-				<div class="search">
-					<input type="text" class="form-control" placeholder="Suche...">
-				</div>
-			</form>
-
-			  <h2 class="sub-header">Frequently Asked Questions</h2>
-		   
-				<div id="rahmen">		
-					<div class="bubble"><a href="#">Wie schalte ich meinen PC ein?</a></div>
-					<div class="bubble"><a href="#">Kann ich meine Daten manuell eintragen?</a></div>
-					<div class="bubble"><a href="#">Sind die Daten des SmartMeters genau?</a></div>
-					<div class="bubble"><a href="#">Werden meine Daten an Drittanbieter weitergegeben?</a></div>
-					<div class="bubble"><a href="#">Wer war zuerst da? Huhn oder Ei?</a></div>
-					<div class="bubble"><a href="#">Wie viel ist 0 x 0?</a></div>
-					<div class="bubble"><a href="#">Wann regnet es?</a></div>
-					<div class="bubble"><a href="#">Ist eine Anmeldung kostenfrei?</a></div>
-					<div class="bubble"><a href="#">Warum kann ich mich nicht einloggen?</a></div>
-				</div>		
+		  <form>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+			<div class="search">
+				<input type="text" class="form-control" placeholder="Suche...">
 			</div>
+          </form>
+
+        <h2 class="sub-header">Analyse</h2>
+        
+		<!-- Two columns of text below the carousel -->
+		<div class="im-centered">
+		<div class="row">
+			<div class="col-lg-6">
+				<img class="img-circle" src="img/placeholder/kreisdiagramm.png" alt="Generic placeholder image" width="350" height="350">
+					<h2>Aktueller Stand</h2>
+				<p>Gesamt-Stromkosten: 200€ / Monat</p>
+				<p>Verbrauch: 20 kW</p>
+				<p>Größter Energieverbraucher: Fernseher / 5 kW</p>
+				<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+			</div><!-- /.col-lg-6 -->
+			<div class="col-lg-6">
+				<img class="img-circle" src="img/placeholder/kreisdiagramm2.png" alt="Generic placeholder image" width="350" height="350">
+					<h2>Alternativer Stand</h2>
+				<p>Gesamt-Stromkosten: 200€ / Monat</p>
+				<p>Verbrauch: 12 kW</p>
+				<p>Größter Energieverbraucher: Toaster / 3 kW</p>
+				<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+			</div><!-- /.col-lg-6 -->
+		</div><!-- /.row -->
 		</div>
-    </div>
-	
+		
+		</div>
+		</div>
+	</div>
+		
+
 	<footer>
 		<div class="container-fluid">
 		

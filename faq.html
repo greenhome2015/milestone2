@@ -8,7 +8,25 @@
     <meta name="description" content="Milestone2">
     <meta name="author" content="Gruppe2">
 
-    <title>Green Home</title>
+    <title>Projektname</title>
+	
+	<style>
+	#rahmen {
+		width: 70%;
+		margin: 0 auto;
+		padding: 20px 0 20px 0;
+	}
+	
+	.bubble {
+		background: url('img/faq/bubble.png');
+		width: 300px;
+		height: 155px;
+		padding: 25px 25px 30px 30px;
+		margin: 10px;
+		
+	}
+	
+	</style>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -42,13 +60,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Green Home</a>
+          <a class="navbar-brand" href="#">Project name</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><span class="glyphicon glyphicon-th"></span><a href="#">Überblick</a></li>
+            <li><span class="glyphicon glyphicon-th"></span><a href="index.html">Überblick</a></li>
 			<li><span class="glyphicon glyphicon-piggy-bank"></span><a href="#">Vorschläge</a></li>
-            <li><span class="glyphicon glyphicon-list"></span><a href="faq.html">FAQ</a></li>
+            <li class="active"><span class="glyphicon glyphicon-list"></span><a href="#">FAQ</a></li>
             <li><span class="glyphicon glyphicon-cog"></span><a href="#">Profil</a></li>
           </ul>
 		<div class="profile btn-grp">
@@ -68,10 +86,10 @@
 			<div class="col-sm-3 col-md-2 sidebar">
 			  <ul class="nav nav-sidebar">
 			  <h2 class="sub-header">Meine Geräte</h2> 
-				<li class="active"><a href="#">Überblick<span class="sr-only">(current)</span></a></li>
+				<li><a href="index.html">Überblick</a></li>
 				<li><a href="#">Vorschläge</a></li>
 				<li><a href="#">Analyse</a></li>
-				<li><a href="faq.html">FAQ</a></li>
+				<li class="active"><a href="#">FAQ<span class="sr-only">(current)</span></a></li>
 			  </ul>
 			  <ul class="nav nav-sidebar">
 				<li><a href="">Wohnzimmer</a></li>
@@ -80,103 +98,33 @@
 				<li><a href="">Büro</a></li>
 			  </ul>
 			</div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 		  <form>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 			<div class="search">
 				<input type="text" class="form-control" placeholder="Suche...">
 			</div>
           </form>
 
-          <h2 class="sub-header">Ergebnisse</h2>
+          <h2 class="sub-header">Frequently Asked Question</h2>
           <div class="table-responsive results">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>Platz</th>
-                  <th>Bild</th>
-                  <th>Hersteller</th>
-                  <th>Ersparnis</th>
-                  <th>Preis</th>
-                </tr>
-              </thead>
-              <tbody>
-				<a href="#">
-                <tr>
-                  <td>1</td>
-                  <td><a href="details.html"><img src="img/geraete/tv.png" class="img-responsive"/></a></td>
-                  <td>Sumsang UE12345LCD</td>
-                  <td>15€ / Monat</td>
-                  <td>499€</td>
-                </tr></a>
-                <tr>
-                  <td>2</td>
-                  <td>amet</td>
-                  <td>consectetur</td>
-                  <td>adipiscing</td>
-                  <td>elit</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Integer</td>
-                  <td>nec</td>
-                  <td>odio</td>
-                  <td>Praesent</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>libero</td>
-                  <td>Sed</td>
-                  <td>cursus</td>
-                  <td>ante</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>dapibus</td>
-                  <td>diam</td>
-                  <td>Sed</td>
-                  <td>nisi</td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>Nulla</td>
-                  <td>quis</td>
-                  <td>sem</td>
-                  <td>at</td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>nibh</td>
-                  <td>elementum</td>
-                  <td>imperdiet</td>
-                  <td>Duis</td>
-                </tr>
-				<tr>
-                  <td>8</td>
-                  <td>nibh</td>
-                  <td>elementum</td>
-                  <td>imperdiet</td>
-                  <td>Duis</td>
-                </tr>
-				<tr>
-                  <td>9</td>
-                  <td>nibh</td>
-                  <td>elementum</td>
-                  <td>imperdiet</td>
-                  <td>Duis</td>
-                </tr>
-		        <tr>
-                  <td>10</td>
-                  <td>nibh</td>
-                  <td>elementum</td>
-                  <td>imperdiet</td>
-                  <td>Duis</td>
-                </tr>
-              </tbody>
-            </table>
+       
+			<div id="rahmen">		
+				<div class="bubble" style="float: left;"><a href="#">Wie schalte ich meinen PC ein?</a></div>
+				<div class="bubble" style="float: left;"><a href="#">Kann ich meine Daten manuell eintragen?</a></div>
+				<div class="bubble" style="float: left;"><a href="#">Sind die Daten des SmartMeters genau?</a></div>
+				<div class="bubble" style="float: left;"><a href="#">Werden meine Daten an Drittanbieter weitergegeben?</a></div>
+				<div class="bubble" style="float: left;"><a href="#">Wer war zuerst da? Huhn oder Ei?</a></div>
+				<div class="bubble" style="float: left;"><a href="#">Wie viel ist 0 x 0?</a></div>
+				<div class="bubble" style="float: left;"><a href="#">Wann regnet es?</a></div>
+				<div class="bubble" style="float: left;"><a href="#">Ist eine Anmeldung kostenfrei?</a></div>
+				<div class="bubble" style="float: left;"><a href="#">Warum kann ich mich nicht einloggen?</a></div>
+			</div>		
+		  
           </div>
         </div>
       </div>
     </div>
+	
 	<footer>
 		<div class="container-fluid">
 		

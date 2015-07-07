@@ -9,6 +9,7 @@ body {
   font-family: 'Roboto', 'Roboto Condensed', sans-serif;
   background-color: #f9f9f9;
   color: #757575;
+  overflow-y: scroll; /* Scrollbar rechts erzwingen */
 }
 
 .container-fluid.top {
@@ -139,6 +140,7 @@ float: right;
 ul.navbar-nav li > a{
 	position:relative;
 	text-transform: uppercase;
+	font-size: 12px;
 	padding: 0;
 }
 

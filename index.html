@@ -8,7 +8,7 @@
     <meta name="description" content="Milestone2">
     <meta name="author" content="Gruppe2">
 
-    <title>Projekt Name</title>
+    <title>Projektname</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -34,7 +34,7 @@
   <body>
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
+      <div class="container-fluid top">
         <div class="navbar-header col-sm-3 col-md-2">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -46,13 +46,18 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#" class="btn btn-link"><span class="glyphicon glyphicon-th" aria-hidden="true"></span>Überblick</a></li>
-			<li><a href="#" class="btn btn-link"><span class="glyphicon glyphicon-piggy-bank"></span>Vorschläge</a></li>
-            <li><a href="#"class="btn btn-link"><span class="glyphicon glyphicon-list"></span>FAQ</a></li>
-            <li><a href="#" class="btn btn-link"><span class="glyphicon glyphicon-cog"></span>Profil</a></li>
+            <li class="active"><span class="glyphicon glyphicon-th"></span><a href="#">Überblick</a></li>
+			<li><span class="glyphicon glyphicon-piggy-bank"></span><a href="#">Vorschläge</a></li>
+            <li><span class="glyphicon glyphicon-list"></span><a href="#">FAQ</a></li>
+            <li><span class="glyphicon glyphicon-cog"></span><a href="#">Profil</a></li>
           </ul>
-		  <ul class="nav navbar-nav navbar-right">
-            <li class="profile"><img class="profilepic" src="img/profile/spencer.jpg" /></li>
+		<div class="profile btn-grp">
+		<button type="button" class="btn btn-primary pic dropdown-toggle" data-toggle="dropdown"><img class="profilepic" src="img/profile/spencer.jpg" /></button>
+		  <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Placeholder</a></li>
+			<li><a href="#">Placeholder</a></li>
+			<li><a href="#">Einstellungen<span class="glyphicon glyphicon-cog"></span></a></li>
+			<li><a href="#">Logout<span class="glyphicon glyphicon-off"></span></a></li>
           </ul>
         </div>
       </div>
@@ -64,9 +69,9 @@
 			  <ul class="nav nav-sidebar">
 			  <h2 class="sub-header">Meine Geräte</h2> 
 				<li class="active"><a href="#">Überblick<span class="sr-only">(current)</span></a></li>
-				<li><a href="#">Reports</a></li>
-				<li><a href="#">Analytics</a></li>
-				<li><a href="#">Export</a></li>
+				<li><a href="#">Vorschläge</a></li>
+				<li><a href="#">Analyse</a></li>
+				<li><a href="#">FAQ</a></li>
 			  </ul>
 			  <ul class="nav nav-sidebar">
 				<li><a href="">Wohnzimmer</a></li>
@@ -79,34 +84,34 @@
 		  <form>
 			<div class="search">
 				<input type="text" class="form-control" placeholder="Suche...">
-				<a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-circle-sm btn-default"><span class="glyphicon glyphicon-search"></span> </a>
 			</div>
           </form>
 
           <h2 class="sub-header">Ergebnisse</h2>
-          <div class="table-responsive">
+          <div class="table-responsive results">
             <table class="table table-striped">
               <thead>
                 <tr>
                   <th>Platz</th>
                   <th>Bild</th>
                   <th>Hersteller</th>
-                  <th>Energieverbrauch</th>
+                  <th>Ersparnis</th>
                   <th>Preis</th>
                 </tr>
               </thead>
               <tbody>
+				<a href="#">
                 <tr>
                   <td>1</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                </tr>
+                  <td><a href="details.html"><img src="img/geraete/tv.png" class="img-responsive"/></a></td>
+                  <td>Sumsang UE12345LCD</td>
+                  <td>15€ / Monat</td>
+                  <td>499€</td>
+                </tr></a>
                 <tr>
                   <td>2</td>
                   <td>amet</td>
-                  <td><span class="glyphicons glyphicons-search"></span>consectetur</td>
+                  <td>consectetur</td>
                   <td>adipiscing</td>
                   <td>elit</td>
                 </tr>
@@ -145,12 +150,38 @@
                   <td>imperdiet</td>
                   <td>Duis</td>
                 </tr>
+				<tr>
+                  <td>8</td>
+                  <td>nibh</td>
+                  <td>elementum</td>
+                  <td>imperdiet</td>
+                  <td>Duis</td>
+                </tr>
+				<tr>
+                  <td>9</td>
+                  <td>nibh</td>
+                  <td>elementum</td>
+                  <td>imperdiet</td>
+                  <td>Duis</td>
+                </tr>
+		        <tr>
+                  <td>10</td>
+                  <td>nibh</td>
+                  <td>elementum</td>
+                  <td>imperdiet</td>
+                  <td>Duis</td>
+                </tr>
               </tbody>
             </table>
           </div>
         </div>
       </div>
     </div>
+	<footer>
+		<div class="container-fluid">
+		
+		</div>
+	</footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

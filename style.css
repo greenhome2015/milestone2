@@ -11,17 +11,52 @@ body {
   color: #757575;
 }
 
-.navbar-nav span{
- float:left;
- text-align:center;
- font-size: 35px;
+.container-fluid.top {
+	padding:0;
+}
+footer {
+	height: 50px;
+	background-color: #ababab;
 }
 
 /*
- * Profil
+ * Profil Navigation
  */
 .profile {
+	position: relative;
+	float:right;
+}
+
+.profile .btn.pic {
+	border-radius: 0;
+}
+
+.profile .btn-primary  {
 	background-color: #00897B;
+	border: none;
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+	background-color: #00897B;
+	border: none;
+	border-color: transparent;
+}
+
+
+.profile .btn-primary.active, .profile .btn-primary:active, .profile .open>.dropdown-toggle.btn-primary{
+	background-color: #00897B;
+	border: none;
+}
+
+.profile .dropdown-menu {
+	margin: 0;
+	border-radius: 0;
+	left: -67px;
+	border: none;
+}
+
+.profile .dropdown-menu span{
+float: right;
 }
 
 
@@ -29,7 +64,7 @@ body {
 	width: 60px;
 	height: 60px;
 	border-radius: 50%;
-	margin: 15px;
+	margin: 9px 5px;
 }
 
 /*
@@ -91,6 +126,11 @@ body {
  * Hide default border to remove 1px line.
  */
  
+.navbar-inverse .navbar-brand {
+	color: #FFC107 ;
+	text-transform: uppercase;
+ }
+ 
 .navbar {
 	height: 50px;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -98,9 +138,12 @@ body {
 
 ul.navbar-nav li > a{
 	position:relative;
-	display: block;
-	padding: 30px;
 	text-transform: uppercase;
+	padding: 0;
+}
+
+.navbar-nav li {
+ 
 }
 
 .navbar-fixed-top {
@@ -111,7 +154,34 @@ ul.navbar-nav li > a{
 }
 .navbar-inverse .navbar-nav>li>a {
 	color: #FFF;
+	width: 90px;
+	height: 90px;
+	text-align: center;
 }
+
+.navbar-header {
+  padding: 0px;
+}
+ 
+.navbar-nav span{
+ display: block;
+ float:left;
+ font-size: 30px;
+ text-align:center;
+ color: #fff;
+ margin: 15px 30px 15px 30px;
+}
+
+.navbar-inverse .navbar-nav>.active>span, .navbar-inverse .navbar-nav>.active>span:focus, .navbar-inverse .navbar-nav>.active>span:hover{
+ color: #00bfa5;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+ background-color: #FFF;
+ color: #00bfa5;
+ z-index: -1;
+}
+
 
  @media (min-width: 768px) {
   .navbar {
@@ -143,6 +213,24 @@ ul.navbar-nav li > a{
 }
  
 
+ /*
+  * Search
+  */
+
+ 
+ 
+ /*
+  * Searchresults
+  */
+ 
+  .results thead tr {
+	height: 100px;
+}
+ .results tr {
+	height: 120px;
+}
+ 
+ 
 /*
  * Sidebar
  */
